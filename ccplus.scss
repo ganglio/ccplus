@@ -1,3 +1,45 @@
-#cookies {
-	background: red;
+#topBar {
+	top: 20px;
+}
+#game {
+	top: 52px;
+}
+#ccplus {
+	height: 20px;
+	top:0;
+	background-color: black;
+	ul {
+		list-style: none;
+		margin:0;
+		padding:0 0 0 20px;
+		li {
+			margin: 0 10px 0 0;
+			padding: 0;
+			float: left;
+			line-height: 20px;
+			&:after {
+				margin-left: 5px;
+			}
+			&.cheat:after {
+				content: "✗";
+				color: red;
+			}
+			&.cheat {
+				cursor: pointer;
+			}
+			&.cheat.on:after {
+				content: "✓";
+				color: rgb(0,255,0);
+			}
+			&.cheat.on + li.fps {
+				display: block;
+			}
+			&.fps {
+				display: none;
+			}
+			&.fps:after {
+				content: "fps";
+			}
+		}
+	}
 }

@@ -1,4 +1,60 @@
+@charset "UTF-8";
 /* line 1, ccplus.scss */
-#cookies {
-  background: red;
+#topBar {
+  top: 20px;
+}
+
+/* line 4, ccplus.scss */
+#game {
+  top: 52px;
+}
+
+/* line 7, ccplus.scss */
+#ccplus {
+  height: 20px;
+  top: 0;
+  background-color: black;
+}
+/* line 11, ccplus.scss */
+#ccplus ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+/* line 15, ccplus.scss */
+#ccplus ul li {
+  margin: 0 10px 0 0;
+  padding: 0;
+  float: left;
+  line-height: 20px;
+}
+/* line 20, ccplus.scss */
+#ccplus ul li:after {
+  margin-left: 5px;
+}
+/* line 23, ccplus.scss */
+#ccplus ul li.cheat:after {
+  content: "✗";
+  color: red;
+}
+/* line 27, ccplus.scss */
+#ccplus ul li.cheat {
+  cursor: pointer;
+}
+/* line 30, ccplus.scss */
+#ccplus ul li.cheat.on:after {
+  content: "✓";
+  color: lime;
+}
+/* line 34, ccplus.scss */
+#ccplus ul li.cheat.on + li.fps {
+  display: block;
+}
+/* line 37, ccplus.scss */
+#ccplus ul li.fps {
+  display: none;
+}
+/* line 40, ccplus.scss */
+#ccplus ul li.fps:after {
+  content: "fps";
 }
