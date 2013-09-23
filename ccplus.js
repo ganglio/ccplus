@@ -6,7 +6,7 @@
 	    $ccplus_fps;
 
 	var l = document.createElement("link");
-	l.href = "https://ganglio.github.com/ccplus/ccplus.css";
+	l.href = "http://ganglio.github.com/ccplus/ccplus.css";
 	l.type="text/css";
 	l.rel="stylesheet";
 	l.addEventListener("load",function(){
