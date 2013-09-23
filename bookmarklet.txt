@@ -1,6 +1,0 @@
-javascript: void((function(d){
-	var s = d.createElement("script");
-	s.src = "https://raw.github.com/ganglio/ccplus/master/ccplus.js";
-	s.type="text/javascript";
-	d.head.appendChild(s);
-})(document));
