@@ -33,13 +33,13 @@
   margin-left: 5px;
 }
 /* line 23, ccplus.scss */
+#ccplus ul li.cheat {
+  cursor: pointer;
+}
+/* line 25, ccplus.scss */
 #ccplus ul li.cheat:after {
   content: "✗";
   color: red;
-}
-/* line 27, ccplus.scss */
-#ccplus ul li.cheat {
-  cursor: pointer;
 }
 /* line 30, ccplus.scss */
 #ccplus ul li.cheat.on:after {
@@ -50,11 +50,15 @@
 #ccplus ul li.cheat.on + li.fps {
   display: block;
 }
-/* line 37, ccplus.scss */
+/* line 39, ccplus.scss */
 #ccplus ul li.fps {
   display: none;
 }
-/* line 40, ccplus.scss */
+/* line 41, ccplus.scss */
 #ccplus ul li.fps:after {
   content: "fps";
+}
+/* line 45, ccplus.scss */
+#ccplus ul li.mail {
+  cursor: pointer;
 }

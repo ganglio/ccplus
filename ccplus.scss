@@ -20,25 +20,30 @@
 			&:after {
 				margin-left: 5px;
 			}
-			&.cheat:after {
-				content: "✗";
-				color: red;
-			}
 			&.cheat {
 				cursor: pointer;
-			}
-			&.cheat.on:after {
-				content: "✓";
-				color: rgb(0,255,0);
-			}
-			&.cheat.on + li.fps {
-				display: block;
+				&:after {
+					content: "✗";
+					color: red;
+				}
+				&.on {
+					&:after {
+						content: "✓";
+						color: rgb(0,255,0);
+					}
+					& + li.fps {
+						display: block;
+					}
+				}
 			}
 			&.fps {
 				display: none;
+				&:after {
+					content: "fps";
+				}
 			}
-			&.fps:after {
-				content: "fps";
+			&.mail {
+				cursor: pointer;
 			}
 		}
 	}

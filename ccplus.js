@@ -12,7 +12,7 @@
 	l.addEventListener("load",function(){
 		var ccplus = document.createElement("div");
 		ccplus.id = "ccplus";
-		ccplus.innerHTML = "<ul><li class='cheat'>ClickBot </li><li class='fps'></li></ul>";
+		ccplus.innerHTML = "<ul><li class='cheat'>ClickBot </li><li class='fps'></li><li class='mail'>Send Save</li></ul>";
 		document.body.appendChild(ccplus);
 		init();
 	});
@@ -23,6 +23,10 @@
 		$ccplus_fps = document.querySelector("#ccplus .fps");
 		$ccplus_cheat.addEventListener("click",function(){
 			this.classList.toggle("on");
+		});
+
+		document.querySelector("#ccplus .mail").addEventListener("click",function(){
+			window.open("mailto:?subject="+escape("Cookie Clicker Save - "+(new Date()))+"&body="+escape("This is your savefile:\n\n"+Game.WriteSave(1)+"\n\nClick here http://orteil.dashnet.org/cookieclicker/ to play!"));
 		});
 	}
 
