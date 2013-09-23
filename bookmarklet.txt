@@ -1,0 +1,10 @@
+javascript: void((function(d){
+	var l = d.createElement("link");
+	l.href = "https://raw.github.com/ganglio/ccplus/master/ccplus.css";
+	l.type="text/css";
+	l.rel="stylesheet";
+	var s = d.createElement("script");
+	s.src = "https://raw.github.com/ganglio/ccplus/master/ccplus.js";
+	s.type="text/javascript";
+	d.head.appendChild(s);
+})(document));
