@@ -6,13 +6,13 @@
 	    $ccplus_fps;
 
 	var l = document.createElement("link");
-	l.href = "https://raw.github.com/ganglio/ccplus/master/ccplus.css";
+	l.href = "http://ccplus.localhost/ccplus.css";
 	l.type="text/css";
 	l.rel="stylesheet";
 	l.addEventListener("load",function(){
 		var ccplus = document.createElement("div");
 		ccplus.id = "ccplus";
-		ccplus.innerHTML = "<ul><li class='cheat'>ClickBot </li><li class='fps'></li><li class='mail'>Send Save</li></ul>";
+		ccplus.innerHTML = "<ul><li class='cheat'><span>ClickBot</span> </li><li class='fps'></li><li class='mail'><span>Send Save</span></li></ul>";
 		document.body.appendChild(ccplus);
 		init();
 	});
@@ -26,7 +26,7 @@
 		});
 
 		document.querySelector("#ccplus .mail").addEventListener("click",function(){
-			window.open("mailto:?subject="+escape("Cookie Clicker Save - "+(new Date()))+"&body="+escape("This is your savefile:\n\n"+Game.WriteSave(1)+"\n\nClick here http://orteil.dashnet.org/cookieclicker/ to play!"));
+			window.open("mailto:?subject="+escape("Cookie Clicker Save")+"&body="+escape("This is your savefile on " + new Date() + ":\n\n" + Game.WriteSave(1)+"\n\nClick here http://orteil.dashnet.org/cookieclicker/ to play!"));
 		});
 	}
 
