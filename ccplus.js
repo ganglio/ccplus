@@ -58,4 +58,5 @@
 			document.querySelector("#ccplus .fps").innerText= (1000/frameTime).toFixed(1);
 	},1000);
 	loop();
+	console.log("CCPlus Initialized");
 })();
