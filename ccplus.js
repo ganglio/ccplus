@@ -34,14 +34,17 @@
 			document.querySelector("#bigCookie").click();
 			for (var i=0;i<10;i++) {
 				if (Game.wrinklers[i].close==1) {
-					Game.wrinklers[i].hp = 0}
+					Game.wrinklers[i].hp = 0
+					console.log("wrinkler clicked");
 				}
 			}
 			if (Game.goldenCookie.life > 0) {
 				Game.goldenCookie.click();
+				console.log("goldenCookie clicked");
 			}
 			if (Game.seasonPopup.life > 0) {
 				Game.seasonPopup.click();
+				console.log("seasonPopup clicked");
 			}
 		}
 		var thisFrameTime = (thisLoop=new Date) - lastLoop;
