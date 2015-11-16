@@ -30,8 +30,20 @@
 	var filterStrength = 20;
 	var frameTime = 0, lastLoop = new Date, thisLoop;
 	var loop = function() {
-		if ( $ccplus_cheat && $ccplus_cheat.checked)
+		if ( $ccplus_cheat && $ccplus_cheat.checked) {
 			document.querySelector("#bigCookie").click();
+			for (var i=0;i<10;i++) {
+				if (Game.wrinklers[i].close==1) {
+					Game.wrinklers[i].hp = 0}
+				}
+			}
+			if (Game.goldenCookie.life > 0) {
+				Game.goldenCookie.click();
+			}
+			if (Game.seasonPopup.life > 0) {
+				Game.seasonPopup.click();
+			}
+		}
 		var thisFrameTime = (thisLoop=new Date) - lastLoop;
 		frameTime+= (thisFrameTime - frameTime) / filterStrength;
 		lastLoop = thisLoop;
