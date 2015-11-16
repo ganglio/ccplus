@@ -50,13 +50,13 @@
 		var thisFrameTime = (thisLoop=new Date) - lastLoop;
 		frameTime+= (thisFrameTime - frameTime) / filterStrength;
 		lastLoop = thisLoop;
-
-		window.requestAnimationFrame(loop);
 	}
 	setInterval(function(){
 		if ( $ccplus_cheat && $ccplus_cheat.checked)
 			document.querySelector("#ccplus .fps").innerText= (1000/frameTime).toFixed(1);
 	},1000);
-	loop();
+	setInterval(function(){
+		loop();
+	},1)
 	console.log("CCPlus Initialized");
 })();
