@@ -19,6 +19,7 @@
 	document.head.appendChild(l);
 
 	function init() {
+		document.querySelector("#support").innerHTML = "";
 		$ccplus_cheat = document.querySelector("input[type=checkbox][name=cheat]");
 		$ccplus_fps = document.querySelector("#ccplus .fps");
 
